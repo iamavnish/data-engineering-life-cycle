@@ -44,3 +44,6 @@ User activity data from e-commerce application. Below is a sample record:
 }
 
 ## Solution Architecture
+
+![image](https://github.com/user-attachments/assets/1a3dab67-ed0f-4592-b0d9-b39e278f399e)
+
