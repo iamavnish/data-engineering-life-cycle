@@ -43,3 +43,4 @@ User activity data from e-commerce application. Below is a sample record:
     ]
 }
 
+## Solution Architecture
