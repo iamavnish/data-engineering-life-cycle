@@ -7,3 +7,8 @@ This is Proof of Concept for creating a streaming ETL pipeline using Amazon Kine
 ## PoC Complexity Level
 
 Medium
+
+## Tech Stack
+
+- Amazon Kinesis Data Stream
+- Python 3
