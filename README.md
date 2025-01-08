@@ -24,27 +24,29 @@ An e-commerce application is streaming user activity records as events into Kine
 User activity data from e-commerce application. Below is a sample record:
 
 {
-    "session_id": "xyz",
-    "customer_number": 100,
-    "city": "Dallas",
-    "country": "USA",
-    "credit_limit": 2000,
-    "browse_history": [
-        {
-            "product_code": "Product1",
-            "quantity": 3,
-            "in_shopping_cart": true
-        },
-        {
-            "product_code": "Product2",
-            "quantity": 2,
-            "in_shopping_cart": false
-        }
-    ]
+  "session_id": "xyz",
+  "customer_number": 100,
+  "city": "Dallas",
+  "country": "USA",
+  "credit_limit": 2000,
+  "browse_history": [
+    {
+      "product_code": "Product1",
+      "quantity": 3,
+      "in_shopping_cart": true
+    },
+    {
+      "product_code": "Product2",
+      "quantity": 2,
+      "in_shopping_cart": false
+    }
+  ]
 }
 
 ## Solution Architecture
 
 ![image](https://github.com/user-attachments/assets/d1b79003-153b-470f-8afe-cceced63c57a)
+
+A consumer application pulls messages from Kinesis Data Stream which is part of source system. Then it applies some transformations on the ingested data and send the transformed data to one of the Kinesis Data Streams. Each of those data streams will then be delivered through Kinesis Firehose to their respective S3 buckets (one for USA users and another for non USA users) to be processed differently by downstream applications like recommendation engine or BI application.
 
 
