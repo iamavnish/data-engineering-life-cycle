@@ -38,7 +38,9 @@ A consumer application pulls messages from Kinesis Data Stream which is part of 
 
 The transformations consist of adding additional attributes as shown below plus a filter to send records with "country" as "USA" to one data stream and records with "country" not as "USA" to another data stream as shown below:
 
-![image](https://github.com/user-attachments/assets/96d536f2-23cd-4ab4-9d92-e988b979eda4)
+
+![image](https://github.com/user-attachments/assets/9155917a-7f59-4fc1-8397-25d655c6f4e5)
+
 
 
 
