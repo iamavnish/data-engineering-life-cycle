@@ -43,5 +43,5 @@ The transformations consist of adding additional attributes as shown below:
 ![image](https://github.com/user-attachments/assets/9155917a-7f59-4fc1-8397-25d655c6f4e5)
 
 
-
+Plus a filter is created to send records with "country" as "USA" to one data stream and records with "country" not as "USA" to another data stream.
 
