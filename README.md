@@ -33,6 +33,9 @@ User activity data from e-commerce application. Below is a sample record:
 
 A consumer application pulls messages from Kinesis Data Stream which is part of source system. Then it applies some transformations on the ingested data and send the transformed data to one of the new Kinesis Data Streams. Each of those data streams will then be delivered through Kinesis Firehose to their respective S3 buckets (one for USA users and another for non USA users) to be processed differently by downstream applications like recommendation engine or BI application.
 
-The transformations consist of adding additional attributes as shown below plus a filter to send records with "country" as "USA" to one data stream and records with "country" not as "USA" to another data stream.
+The transformations consist of adding additional attributes as shown below plus a filter to send records with "country" as "USA" to one data stream and records with "country" not as "USA" to another data stream as shown below:
+
+![image](https://github.com/user-attachments/assets/96d536f2-23cd-4ab4-9d92-e988b979eda4)
+
 
 
