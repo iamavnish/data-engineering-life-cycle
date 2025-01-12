@@ -21,9 +21,12 @@ An e-commerce application is streaming user activity records as events into Kine
 
 ## Dataset
 
-User activity data from e-commerce application. Below is a sample record:
+User activity data from e-commerce application. Below are two sample records:
 
 ![image](https://github.com/user-attachments/assets/e19e105b-cfc6-43db-ad1a-bf00f6193809)
+
+![image](https://github.com/user-attachments/assets/f99abbcf-757b-457a-aa8c-cc0e6bd7300e)
+
 
 
 
