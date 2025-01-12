@@ -23,7 +23,8 @@ An e-commerce application is streaming user activity records as events into Kine
 
 User activity data from e-commerce application. Below is a sample record:
 
-![image](https://github.com/user-attachments/assets/991e5eb2-9034-4312-894f-7d1075f8e3a0)
+![image](https://github.com/user-attachments/assets/e19e105b-cfc6-43db-ad1a-bf00f6193809)
+
 
 
 ## Solution Architecture
