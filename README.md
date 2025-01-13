@@ -49,7 +49,7 @@ Two S3 buckets, two Kinesis Data Streams, two Kinesis Firehose instances need to
 
 Once resources are created, run the script consumer.py (attached) which represents consumer application. This script will read records from source stream, tramsform them and send them to appropriate streams. The script needs two arguments - source streams and destination streams.
 
-python consumer.py --source_stream <source stream name> --dest_streams '{"USA": <USA stream name>, "International": <International stream name>}'
+python consumer.py --source_stream <source-stream-name> --dest_streams '{"USA": <USA-stream-name>, "International": <International-stream-name>}'
 
 The Kinesis Firehose will finally automatically read from Kinesis Data Stream and write to appropriate S3 bucket.
 
