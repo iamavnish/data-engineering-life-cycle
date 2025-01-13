@@ -54,3 +54,5 @@ Once resources are created, run the script consumer.py (attached) which represen
 
 The Kinesis Firehose will finally automatically read from Kinesis Data Stream and write to appropriate S3 bucket.
 
+Logs of consumer application are also attached for reference.
+
