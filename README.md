@@ -36,7 +36,7 @@ User activity data from e-commerce application. Below are two sample records:
 
 A consumer application pulls messages from Kinesis Data Stream which is part of source system. Then it applies some transformations on the ingested data and send the transformed data to one of the new Kinesis Data Streams. Each of those data streams will then be delivered through Kinesis Firehose to their respective S3 buckets (one for USA users and another for non USA users) to be processed differently by downstream applications like recommendation engine or BI application.
 
-The transformations consist of adding additional attributes as shown below:
+The transformations consist of adding additional attributes like overall_product_quantity, overall_in_shopping_cart, total_different_products as shown below:
 
 ![image](https://github.com/user-attachments/assets/22b90f6d-8d0f-477e-accd-cdba37db2892)
 
