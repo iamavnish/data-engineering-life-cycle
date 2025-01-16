@@ -13,7 +13,7 @@ Medium
 - Amazon Kinesis Data Stream
 - Amazon Kinesis Firehose
 - S3
-- Python 3 incuding boto3 library
+- Python 3
 
 ## Use Case / Problem Statement
 
@@ -45,7 +45,7 @@ The transformations consist of adding additional attributes like overall_product
 
 Plus a filter is created to send records with "country" as "USA" to one data stream and records with "country" not as "USA" to another data stream.
 
-Two S3 buckets, two Kinesis Data Streams, two Kinesis Firehose instances need to be provisioned (using boto3 library) for USA customers and International customers. One IAM role also needs to be provisioned which allows the Firehose instance to read from a Kinesis Data Stream and write to an S3 bucket.
+Two S3 buckets, two Kinesis Data Streams, two Kinesis Firehose instances need to be provisioned (using IAC tool like Terraform or boto3 library) for USA customers and International customers. One IAM role also needs to be provisioned which allows the Firehose instance to read from a Kinesis Data Stream and write to an S3 bucket.
 
 Once resources are created, run the script consumer.py (attached) which represents consumer application. This script will read records from source stream, tramsform them and send them to appropriate streams. The script needs two arguments - source stream and destination streams.
 
